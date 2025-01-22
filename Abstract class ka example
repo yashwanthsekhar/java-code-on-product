@@ -1,0 +1,27 @@
+abstract class Shape{
+public abstract void area();
+void Shape(){
+        System.out.println("Shape");
+    }
+}
+class Rectangle extends Shape{
+    double length=20;
+    double width=30;
+    public void area(){
+        System.out.println(length*width);
+    }
+}
+class Square extends Shape{
+    double side=5;
+    public void area(){
+        System.out.println(side*side);
+    }
+}
+public class Abstract{
+    public static void main(String[] args) {
+    Rectangle rectangle = new Rectangle();
+    Square square = new Square();
+    rectangle.area();
+    square.area();
+    }
+}
